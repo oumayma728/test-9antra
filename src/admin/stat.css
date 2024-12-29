@@ -1,0 +1,40 @@
+.stat-container {
+    padding: 30px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: #34495e;
+    margin-bottom: 30px;
+  }
+  
+  .stat-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 2rem;
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  

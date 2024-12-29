@@ -1,0 +1,132 @@
+.card-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.card-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.card-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    width: 700px;
+}
+
+.button2 {
+    padding: 10px 20px;
+    background-color: rgb(185, 35, 150);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    margin-left: 950px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button2:hover,
+.button2:focus {
+    background-color: #d1249f;
+    transform: scale(1.05);
+    outline: none;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; 
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 500px; 
+}
+
+.card:hover {
+    transform: translateY(-12px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.course-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .course-image img {
+    transform: scale(1.1);
+}
+
+.course-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.course-info h4 {
+    font-size: 1.6rem;
+    margin: 15px 0;
+    color: #222;
+}
+
+.course-info p {
+    font-size: 1.1rem; 
+    color: #555;
+}
+
+.card .button2 {
+    margin-top: 20px; 
+    padding: 12px 25px; 
+    background-color: rgb(185, 35, 150);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card .button2:hover,
+.card .button2:focus {
+    background-color: #d1249f;
+    transform: scale(1.05);
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .card-text h3 {
+        font-size: 2rem;
+    }
+
+    .card-grid {
+        gap: 20px;
+    }
+
+    .course-info h4 {
+        font-size: 1.4rem;
+    }
+
+    .course-info p {
+        font-size: 1rem;
+    }
+
+    .card {
+        width: 900px; /* Make cards full width on smaller screens */
+        padding: 20px;
+    }
+}
